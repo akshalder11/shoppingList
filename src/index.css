@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font Family */
+
+@font-face {
+  font-family: "ProductSansReg";
+  src: url("./assets/fonts/ProdSansRegular.TTF");
+}
+
+@font-face {
+  font-family: "ProductSansBold";
+  src: url("./assets/fonts/ProdSansBold.TTF");
+}
+
+@font-face {
+  font-family: "ProductSansItalic";
+  src: url("./assets/fonts/ProdSansItalic.TTF");
+}
+
+@font-face {
+  font-family: "ProductSansItalicBold";
+  src: url("./assets/fonts/ProdSansItalicBold.TTF");
+}
+
+*,
+#root {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
