@@ -20,12 +20,12 @@ const BottomNav = ({ addItemToggle, setItemArray, setLocalStorage }) => {
       <Toaster position="top-center" reverseOrder={true} />
       {/* Back button */}
       <div className="bottomNav flex justify-center items-center bottom-4 left-0 fixed w-[100%]">
-        <div
+        {/* <div
           className="w-[71px] h-[71px] mx-3 bg-white rounded-[59px] shadow-xl p-[18px]"
           onClick={close}
         >
           <Back />
-        </div>
+        </div> */}
 
         {/* Add button */}
         <div

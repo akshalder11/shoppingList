@@ -72,7 +72,7 @@ const MainAppLayout = () => {
   const addItemToggle = (val) => {
     console.log("Passing addItemToggle from child to parent", val);
     setAddModalToggle(val);
-    setBottomNavToggle(false);
+    // setBottomNavToggle(false);
   };
 
   //Mark As Done
@@ -117,6 +117,7 @@ const MainAppLayout = () => {
   // console.log(totalItems)
   // console.log(completedTask)
   // console.log(progressPercent)
+  console.log("bottomNavToggle",bottomNavToggle);
 
   return (
     <div className="screenBase px-[18px] pt-[48px] pb-[96px]  ">
