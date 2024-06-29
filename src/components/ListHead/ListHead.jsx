@@ -18,7 +18,7 @@ const ListHead = ({ totalItems, completedTask, progressPercent }) => {
         <div className="w-[100%] h-[6px] left-0 top-0 absolute bg-zinc-100 rounded-xl" />
         <div
           className="h-[6px] left-0 top-0 absolute bg-[#00C37D] rounded-xl"
-          style={{ width: `${progressPercent}%` }}
+          style={{ width: `${progressPercent > 0 ? progressPercent : 0}%` }}
         />
       </div>
     </div>
