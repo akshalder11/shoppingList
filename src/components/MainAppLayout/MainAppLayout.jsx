@@ -120,7 +120,7 @@ const MainAppLayout = () => {
   console.log("bottomNavToggle",bottomNavToggle);
 
   return (
-    <div className="screenBase px-[18px] pt-[48px] pb-[96px]  ">
+    <div className="w-[450px] px-[18px] pt-[48px] pb-[96px]  ">
       <Toaster position="top-center" reverseOrder={true} />
       <ListHead
         totalItems={totalItems}

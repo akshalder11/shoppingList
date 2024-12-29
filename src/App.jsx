@@ -4,7 +4,7 @@ import InputForm from "./components/InputForm/InputForm";
 
 function App() {
   return (
-    <div>
+    <div className="flex justify-center w-[100vw]">
       {/* <InputForm/> */}
       <MainAppLayout />
     </div>
