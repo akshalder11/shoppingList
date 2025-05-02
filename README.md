@@ -26,11 +26,3 @@ A simple and elegant **ReactJS** application that helps users jot down their sho
 
 - **Mobile screens** – quick access on the go
 - **PWA capability** – install and use offline like a native app
-
----
-
-## 💡 Usage
-
-1. Clone the repository  
-   ```bash
-   git clone https://github.com/yourusername/shopping-list-app.git
