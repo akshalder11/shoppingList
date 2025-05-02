@@ -68,16 +68,16 @@ const UpdateItem = ({
     <div className="fixed top-0 right-0 left-0 bottom-0 w-[100vw] h-[100vh] px-[18px] bg-black/75 backdrop-blur-[8px] overflow-hidden">
       <Toaster position="top-center" reverseOrder={true} />
       <div className="flex w-[100%] h-[100vh] justify-center items-center">
-        <div className="w-[100%] h-[511px] bg-white rounded-[15px] p-[26px]">
+        <div className="max-w-[370px] h-[511px] bg-white rounded-[15px] p-[26px]">
           <p className="text-neutral-700 text-[40px]  font-prodBold">
             Modify Item
           </p>
 
           <div className="flex mt-[30px]">
-            <img
+            {/* <img
               className="w-[60px] h-[60px] rounded-full mr-4"
               src="https://via.placeholder.com/60x60"
-            />
+            /> */}
             <div className="itemDetails">
               <div className="itemName text-neutral-700 text-lg font-prodBold">
                 {itemName}
@@ -109,16 +109,16 @@ const UpdateItem = ({
           </div>
 
           {/* Quantity */}
-          <div className="flex">
-            <div className="inputField mt-[30px]">
-              <p className="text-neutral-700 text-[15px]  font-prodBold ">
+          <div className="flex gap-4">
+            <div className="inputField mt-[30px] ">
+              <p className="text-neutral-700 text-[15px] font-prodBold ">
                 Quantity
               </p>
               <input
                 type="text"
                 id="itemQuantity"
                 name="itemQuantity"
-                className="w-[90%] h-10 mt-2 px-4 py-2 bg-white rounded-lg border-2 border-neutral-200 outline-neutral-200 text-neutral-700 text-[14px] justify-start items-center font-prodReg"
+                className="w-[100%] h-10 mt-2 px-4 py-2 bg-white rounded-lg border-2 border-neutral-200 outline-neutral-200 text-neutral-700 text-[14px] justify-start items-center font-prodReg"
                 placeholder="Input quantity here"
                 {...register("itemQuantity", {
                   required: "Please type in the itemQuantity",
@@ -133,9 +133,9 @@ const UpdateItem = ({
                 type="text"
                 id="itemPrice"
                 name="itemPrice"
-                className="w-[90%] h-10 mt-2 px-4 py-2 bg-white rounded-lg border-2 border-neutral-200 outline-neutral-200 text-neutral-700 text-[14px] justify-start items-center font-prodReg"
+                className="w-[100%] h-10 mt-2 px-4 py-2 bg-white rounded-lg border-2 border-neutral-200 outline-neutral-200 text-neutral-700 text-[14px] justify-start items-center font-prodReg"
                 placeholder="Input price here"
-                {...register("itemPrice", {})}
+                {...register("itemPrice")}
               />
             </div>
           </div>
